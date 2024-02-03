@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "📌とりとめのない思考",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -14,9 +14,9 @@ const config: QuartzConfig = {
     defaultDateType: "created",
     theme: {
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Noto Sans JP",
+        body: "Noto Sans JP",
+        code: "Consolas, '源ノ角ゴシック Code JP'",
       },
       colors: {
         lightMode: {
