@@ -25,7 +25,8 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       const segments: string[] = []
 
       if (fileData.dates) {
-        segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
+        segments.push("作成日: " + formatDate(fileData.dates?.created, cfg.locale))
+        segments.push("更新日: " + formatDate(fileData.dates?.modified, cfg.locale))
       }
 
       // Display reading time if enabled
@@ -34,7 +35,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(timeTaken)
       }
 
-      return <p class={classNames(displayClass, "content-meta")}>{segments.join(", ")}</p>
+      return <p class={classNames(displayClass, "content-meta")}>{segments.join(" / ")}</p>
     } else {
       return null
     }

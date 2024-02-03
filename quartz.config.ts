@@ -4,6 +4,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "📌とりとめのない思考",
+    locale: "ja-JP",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -58,6 +59,7 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.ImgAltToDescription(),
+      Plugin.EmbedTweet(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
