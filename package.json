@@ -4,7 +4,7 @@
   "version": "4.2.1",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
+  "homepage": "https://note.cp20.dev",
   "scripts": {
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
