@@ -9,8 +9,7 @@ export const ImgAltToDescription: QuartzTransformerPlugin = () => {
       return [
         () => {
           return (tree: Root) => {
-            visit(tree, "element", (node, index, parent) => {
-              if (index === undefined) return
+            visit(tree, "element", (node, _index, parent) => {
               if (node.tagName !== "img") return
               if (!node.properties) return
               if (typeof node.properties.alt !== "string" || node.properties.alt === "") return
