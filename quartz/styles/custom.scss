@@ -1,3 +1,18 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+@media screen and (max-width: 1510px) {
+  .page > #quartz-body .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page > #quartz-body .sidebar > .graph,
+  .page > #quartz-body .sidebar > .backlinks {
+    width: calc(50% - 1rem);
+  }
+
+  .page > #quartz-body .sidebar > * {
+    flex: 1;
+  }
+}
