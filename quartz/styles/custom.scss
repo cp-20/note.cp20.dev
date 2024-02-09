@@ -9,7 +9,7 @@
 
   .page > #quartz-body .sidebar > .graph,
   .page > #quartz-body .sidebar > .backlinks {
-    width: calc(50% - 1rem);
+    min-width: calc(50% - 1rem);
   }
 
   .page > #quartz-body .sidebar > * {
